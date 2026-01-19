@@ -1,5 +1,4 @@
 from dotenv import load_dotenv
-from langchain_groq import ChatGroq
 from fastmcp import FastMCP
 from typing import List
 import math
@@ -7,10 +6,7 @@ import math
 
 load_dotenv()
 
-llm=ChatGroq(
-    model="openai/gpt-oss-120b",
-    temperature=0,
-)
+
 
 mcp=FastMCP("Mathematics operator")
 
